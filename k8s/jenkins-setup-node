@@ -1,0 +1,3 @@
+- Creata Github PAT key then add into Jenkins, remember use git https
+- Install Plugin: github, nodejs
+- Manage Jenkins > Tools  > Node JS installation > Name "NodeJS for example" > Version > Save
