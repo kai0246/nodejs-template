@@ -1,0 +1,21 @@
+# In order to deploy into k8s cluster by cli kubectl apply -f nginx-argocd-app.yaml
+
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: nginx-app
+  namespace: argocd
+spec:
+  project: default
+  destination:
+    server: https://kubernetes.default.svc  # Endpoint of Kubernetes cluster
+    namespace: default  # Namespace to deploy nginx
+  source:
+    repoURL: 'https://github.com/kai0246/nodejs-template.git'
+    targetRevision: main
+    path: './k8s'
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    #manual: {}
