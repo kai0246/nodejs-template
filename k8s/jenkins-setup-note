@@ -1,0 +1,12 @@
+- Creata Github PAT key then add into Jenkins, remember use git https
+- Install Plugin: github, nodejs
+- Manage Jenkins > Tools  > Node JS installation > Name "NodeJS for example" > Version > Save
+- Use Kaniko to build dockerfile, create a docker registry secret first
+
+```
+kubectl create secret docker-registry docker-credentials \
+  --docker-username=<docker-username> \
+  --docker-password=<docker-password> \
+  --docker-email=<your-email> \
+  -n jenkins
+```
