@@ -1,7 +1,7 @@
 
 - Reset admin password Jenkins: https://opensource.com/article/19/6/jenkins-admin-password-helm-kubernetes
 - Creata Github PAT key then add into Jenkins, remember use git https
-- Install Plugin: github, nodejs, workspace cleanup
+- Install Plugin: workspace cleanup, (github, nodejs - no need)
 - Manage Jenkins > Tools  > Node JS installation > Name "NodeJS for example" > Version > Save
 - Use Kaniko to build dockerfile, create a docker registry secret first
 
