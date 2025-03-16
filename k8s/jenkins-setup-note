@@ -7,8 +7,8 @@
 
 ```
 kubectl create secret docker-registry docker-credentials \
-  --docker-username=<docker-username> \
-  --docker-password=<docker-password> \
-  --docker-email=<your-email> \
+  --docker-username=htimo \
+  --docker-password=P@ssw0rd@ \
+  --docker-email=htimo0246@gmail.com \
   -n jenkins
 ```
