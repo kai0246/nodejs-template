@@ -1,0 +1,47 @@
+Testing 1
+
+Requirements:
+
+configurations)
+
+Version Control (mandatory): Use Git to manage your codebase (scripts, configur
+
+Container Orchestration: Integrate any containerized components you experience
+
+experienced with.
+
+Deliverables:
+
+README.md: This file should provide instructions.
+
+1. Jenkins jobs (30 minutes)
+
+Task: Create a Jenkins pipeline to build and test a sample/any application. The pipeline should:
+
+Checkout code from a Git repository.
+
+Run unit tests (mocked or real).
+
+Package the application (e.g., create a Docker image).
+
+2. Argo CD Deployment (30 minutes)
+
+Task: Deploy an application to an EKS cluster using Argo CD. The task should include:
+
+Configuring Argo CD to sync with a Git repository.
+
+Creating a custom application manifest.
+
+Performing a sync operation and handling any discrepancies.
+
+Evaluation Criteria:
+
+Set up stages for build, test, and package.
+
+Handle errors and notifications within the pipeline.
+
+Configuring Argo CD for GitOps.
+
+Managing sync and health checks.
+
+Handling deployment errors and rollbacks.
